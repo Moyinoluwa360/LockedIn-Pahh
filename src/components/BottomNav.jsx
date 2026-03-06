@@ -14,14 +14,12 @@ const BottomNav = ({ activeTab, setActiveTab }) => {
             bottom: 0,
             left: 0,
             right: 0,
-            height: '64px',
-            background: 'var(--bg-primary)',
+            background: 'var(--bg-secondary)',
             borderTop: '1px solid var(--surface-border)',
             display: 'flex',
             justifyContent: 'space-around',
-            alignItems: 'center',
-            paddingBottom: 'env(safe-area-inset-bottom)', /* For iPhone home indicator */
-            zIndex: 100
+            padding: 'var(--spacing-sm) 0 calc(var(--spacing-sm) + 20px) 0', /* Added 20px for iOS home indicator */
+            zIndex: 100,
         }}>
             {navItems.map(item => (
                 <button
