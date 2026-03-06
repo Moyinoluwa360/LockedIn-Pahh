@@ -27,7 +27,8 @@ function App() {
           maxWidth: '800px', /* Constrain width on larger screens */
           margin: '0 auto',
         }}>
-          <div className="animate-fade-in">
+          {/* Added extra 20px padding-bottom to account for the new BottomNav height */}
+          <div style={{ maxWidth: '600px', margin: '0 auto', paddingBottom: '90px' }}>
             {activeTab === 'dashboard' && <Dashboard setActiveTab={setActiveTab} />}
             {activeTab === 'tasks' && <TasksList />}
             {activeTab === 'calendar' && <CalendarView />}

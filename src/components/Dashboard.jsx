@@ -93,13 +93,13 @@ const Dashboard = ({ setActiveTab }) => {
             {/* 1. Hero Metrics: Weekly Productivity & Longest Streak */}
             <section style={{ display: 'flex', gap: 'var(--spacing-md)' }}>
                 <div style={{ flex: 1, background: 'var(--bg-secondary)', border: '1px solid var(--surface-border)', padding: 'var(--spacing-lg)', borderRadius: 'var(--radius-md)' }}>
-                    <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: 'var(--spacing-xs)' }}>Week Productivity</div>
+                    <div style={{ fontSize: '0.68rem', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: 'var(--spacing-xs)' }}>Week Productivity</div>
                     <div style={{ fontSize: '2.3rem', fontWeight: 700, lineHeight: 1, color: 'var(--text-primary)' }}>
                         {weekProductivityPercentage}<span style={{ fontSize: '1.5rem', fontWeight: 600 }}>%</span>
                     </div>
                 </div>
                 <div style={{ flex: 1, background: 'var(--bg-secondary)', border: '1px solid var(--surface-border)', padding: 'var(--spacing-lg)', borderRadius: 'var(--radius-md)' }}>
-                    <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: 'var(--spacing-xs)' }}>Longest 💪</div>
+                    <div style={{ fontSize: '0.70rem', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: 'var(--spacing-xs)' }}>Longest 💪</div>
                     <div style={{ fontSize: '2.5rem', fontWeight: 700, lineHeight: 1 }}>{longestStreak} <span style={{ fontSize: '1rem', color: 'var(--text-secondary)', fontWeight: 400 }}>days</span></div>
                 </div>
             </section>
