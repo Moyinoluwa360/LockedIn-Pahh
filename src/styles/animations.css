@@ -1,0 +1,40 @@
+/* Very fast, snappy opacity fades instead of large floating elements */
+@keyframes fastFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fastFadeIn var(--transition-normal) ease-out forwards;
+}
+
+/* Remove all stagger classes, pops, and float animations to keep the app feeling like a utilitarian native tool */
+.animate-pop-in {
+    /* No-op: replaced with simple opacity if used */
+    animation: fastFadeIn var(--transition-fast) ease-out forwards;
+}
+
+.animate-float {
+    /* No-op */
+}
+
+.stagger-1 {
+    animation-delay: 0ms;
+}
+
+.stagger-2 {
+    animation-delay: 0ms;
+}
+
+.stagger-3 {
+    animation-delay: 0ms;
+}
+
+.stagger-4 {
+    animation-delay: 0ms;
+}
